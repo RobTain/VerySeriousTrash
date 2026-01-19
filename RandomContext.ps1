@@ -21,7 +21,7 @@ while ($true) {
     $pos = [System.Windows.Forms.Cursor]::Position
 
     # zufällige Position
-    $x = Get-Random -Minimum 0 -Maximum $width
+    $x = Get-Random -Minimum 0 -Maximum $width - 100
     $y = Get-Random -Minimum 0 -Maximum $height
     [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
 
@@ -35,4 +35,5 @@ while ($true) {
 
     # 30 Sekunden warten
     Start-Sleep -Seconds 3
+
 }
